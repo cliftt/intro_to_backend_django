@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Courses List</title>
+</head>
+<body>
+    <h1>Courses</h1>
+    <ol>
+        <li>ID - Title - Author</li>
+        {% for course in courses %}
+        <li>{{ course.id }} - {{ course.title }} - {{ course.author }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

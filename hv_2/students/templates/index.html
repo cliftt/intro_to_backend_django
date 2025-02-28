@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Students List</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <ol>
+        <li>ID - Name - Surname - Major - Year of Study - Faculty</li>
+        {% for student in students %}
+        <li>
+            {{ student.id }} - {{ student.name }} - {{ student.surname }} -
+            {{ student.major }} - {{ student.year_of_study }} - {{ student.faculty }}
+        </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
